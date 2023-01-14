@@ -1,0 +1,17 @@
+on: push
+name: 🚀 Загрузка вёрстки на JINO-хостинг при пуше
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: j13613171.myjino.ru
+        username: ${{ secrets.ftp_login }}
+        password: ${{ secrets.ftp_password }}
+        server-dir: /domains/preobragenie-html.buildingdev.site/
