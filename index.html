@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>Преображение. Главная страница</title>
+  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/site.css">
+</head>
+
+<body>
+
+  <div class="pagewrap">
+    <div class="pagemain">
+
+      <header class="hdr">
+        <section class="tophdr">
+          <div class="container d-flex">
+            <div class="tophdr__left d-flex">
+              <ul class="topmenu">
+                <li>
+                  <a href="#" class="is-active">Главная</a>
+                </li>
+                <li>
+                  <a href="#">О нас</a>
+                </li>
+                <li>
+                  <a href="#">Бизнес</a>
+                </li>
+                <li>
+                  <a href="#">Услуги</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div><!-- //tophdr__left -->
+            <div class="tophdr__right d-flex">
+              <a href="#" class="hdr__favlink">Избранное</a>
+              <a href="#" class="hdr__loginlink">Вход в кабинет</a>
+              <a href="#" class="minicart"><span class="minicart__border">333</span></a>
+            </div>
+          </div>
+        </section><!-- //tophdr -->
+        <section class="hdrmain container d-flex">
+          <a href="/" class="hdrmain__logo">
+            <img src="./assets/img/logo.png" alt="">
+          </a>
+          <div class="hdrmain__search">
+            <form action="/search.html" method="get">
+              <input type="search" name="q" class="themed" placeholder="Поиск по каталогу">
+              <button type="submit"></button>
+            </form>
+          </div>
+          <div class="hdrmain__contacts">
+            <a href="tel:88005006050" class="hdrmain__phone">8 (800) 500-60-50</a>
+            <a href="tel:88005006050" class="hdrmain__phone">8 (495) 987-35-90</a>
+          </div>
+        </section><!-- //hdrmain -->
+        <div class="mainmenu">
+          <div class="container">
+            <ul class="mainmenu__menu d-flex">
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      d="M2 8.5h12M2 4.5h12M2 12.5h12" />
+                  </svg>
+                  Каталог бижутерии</a>
+              </li>
+              <li>
+                <a href="#">Для кого</a>
+              </li>
+              <li>
+                <a href="#">Коллекции</a>
+              </li>
+              <li>
+                <a href="#">Комплекты</a>
+              </li>
+              <li>
+                <a href="#">Новинки</a>
+              </li>
+              <li>
+                <a href="#">Распродажи</a>
+              </li>
+              <li>
+                <a href="#">Акции</a>
+              </li>
+              <li>
+                <a href="#">Сопутствующие товары</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <section class="frontslider js-frontslider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="frontslider__bg">
+              <img src="./assets/img/frontslider.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="frontslider__bg">
+              <img src="./assets/img/frontslider.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <button class="ctrl ctrl--prev"></button>
+        <button class="ctrl ctrl--next"></button>
+      </section><!-- //frontslider -->
+
+      <section class="frontcards">
+        <a href="" class="frontcard">
+          <img src="./assets/img/front/b2-1.png" alt="" class="frontcard__pic frontcard__pic--1">
+          <div class="frontcard__title">
+            Светские <br><b>комплекты</b> <br>с&nbsp;финаинтами
+          </div>
+        </a>
+        <a href="" class="frontcard">
+          <img src="./assets/img/front/b2-2.png" alt="" class="frontcard__pic frontcard__pic--2">
+          <div class="frontcard__title">
+            Золотые <br><b>подвески</b> <br>с&nbsp;ликами
+          </div>
+        </a>
+        <a href="" class="frontcard">
+          <img src="./assets/img/front/b2-3.png" alt="" class="frontcard__pic frontcard__pic--3">
+          <div class="frontcard__title">
+            <b>Цепи и&nbsp;браслеты</b> <br>с&nbsp;покрытием <br>Родий
+          </div>
+        </a>
+        <a href="" class="frontcard">
+          <img src="./assets/img/front/b2-4.png" alt="" class="frontcard__pic frontcard__pic--4">
+          <div class="frontcard__title frontcard__title--4">
+            <b>Кольца</b> <br>с&nbsp;покрытием <br>Эмаль и&nbsp;молитвой
+          </div>
+        </a>
+      </section>
+
+
+      <section class="fronttabs container" data-tabwrap="front1">
+        <div class="fronttabs__links d-flex">
+          <button class="fronttabs__link is-active" data-tablink="one"><span>Новые поступления</span></button>
+          <button class="fronttabs__link" data-tablink="two"><span>Детская коллекция</span></button>
+          <button class="fronttabs__link" data-tablink="three"><span>Цепи и браслеты</span></button>
+        </div>
+        <div class="hiddentab is-active" data-tab="one">
+          <div class="fronttabs__cards">
+            <article class="item">
+              <a href="#" class="item__thumblink square">
+                <img src="./assets/img/item.jpg" alt="" class="item__thumb square__img">
+                <div class="item__buyed">999</div>
+                <div class="item__salebadge">%</div>
+                <button class="item__addtofav is-active">Добавить в избранное</button>
+              </a>
+              <div class="item__shortinfo">
+                <div class="item__price">
+                  <small>3 500 ₽</small>
+                  <div>2 500 ₽</div>
+                </div>
+                <div class="item__title maxline2">Название товара в две строки, если оно длиннее то обрезается</div>
+              </div>
+            </article>
+            <article class="item">
+              <a href="#" class="item__thumblink square">
+                <img src="./assets/img/item.jpg" alt="" class="item__thumb square__img">
+                <div class="item__buyed">999</div>
+                <div class="item__salebadge">%</div>
+                <button class="item__addtofav">Добавить в избранное</button>
+              </a>
+              <div class="item__shortinfo">
+                <div class="item__price">
+                  <small>3 500 ₽</small>
+                  <div>2 500 ₽</div>
+                </div>
+                <div class="item__title maxline2">Название товара в две строки, если оно длиннее то обрезается</div>
+              </div>
+            </article>
+            <article class="item">
+              <a href="#" class="item__thumblink square">
+                <img src="./assets/img/item.jpg" alt="" class="item__thumb square__img">
+                <div class="item__buyed">999</div>
+                <div class="item__salebadge">%</div>
+                <button class="item__addtofav">Добавить в избранное</button>
+              </a>
+              <div class="item__shortinfo">
+                <div class="item__price">
+                  <small>3 500 ₽</small>
+                  <div>2 500 ₽</div>
+                </div>
+                <div class="item__title maxline2">Название товара в две строки, если оно длиннее то обрезается</div>
+              </div>
+            </article>
+            <article class="item">
+              <a href="#" class="item__thumblink square">
+                <img src="./assets/img/item.jpg" alt="" class="item__thumb square__img">
+                <div class="item__buyed">999</div>
+                <div class="item__salebadge">%</div>
+                <button class="item__addtofav">Добавить в избранное</button>
+              </a>
+              <div class="item__shortinfo">
+                <div class="item__price">
+                  <small>3 500 ₽</small>
+                  <div>2 500 ₽</div>
+                </div>
+                <div class="item__title maxline2">Название товара в две строки, если оно длиннее то обрезается</div>
+              </div>
+            </article>
+            <article class="item">
+              <a href="#" class="item__thumblink square">
+                <img src="./assets/img/item.jpg" alt="" class="item__thumb square__img">
+                <div class="item__buyed">999</div>
+                <div class="item__salebadge">%</div>
+                <button class="item__addtofav">Добавить в избранное</button>
+              </a>
+              <div class="item__shortinfo">
+                <div class="item__price">
+                  <small>3 500 ₽</small>
+                  <div>2 500 ₽</div>
+                </div>
+                <div class="item__title maxline2">Название товара в две строки, если оно длиннее то обрезается</div>
+              </div>
+            </article>
+          </div><!-- //fronttabs__cards -->
+          <div class="fronttabs__action">
+            <a href="#" class="button fronttabs__more">
+              <span>Посмотреть больше</span>
+              <i class="button-arrow"></i>
+            </a>
+          </div>
+        </div><!-- //end tab one -->
+
+        <div class="hiddentab" data-tab="two">
+          <div class="p-4" style="text-align: center;">Второй таб аналогичный предыдущим по разметке</div>
+        </div><!-- //end tab one -->
+
+        <div class="hiddentab" data-tab="three">
+          <div class="p-4" style="text-align: center;">Третий таб аналогичный предыдущим по разметке</div>
+        </div><!-- //end tab one -->
+
+      </section><!-- //fronttabs -->
+
+
+
+      <section class="fronttabs fronttabs--var2" data-tabwrap="front2">
+        <div class="fronttabs__links d-flex">
+          <button class="fronttabs__link is-active" data-tablink="one"><span>Серебряные ложки</span></button>
+          <button class="fronttabs__link" data-tablink="two"><span>Шнурки</span></button>
+          <button class="fronttabs__link" data-tablink="three"><span>Изделия с эмалью</span></button>
+        </div>
+        <div class="container">
+
+          <div class="fronttabs__tab hiddentab is-active" data-tab="one">
+            <section class="tabsslider js-tabsslider swiper">
+              <div class="swiper-wrapper align-items-stretch">
+                <div class="swiper-slide">
+                  <div class="simpleitem simpleitem--big">
+                    <a href="#" class="simpleitem__thumblink square">
+                      <img src="./assets/img/lozhka.jpg" alt="" class="simpleitem__thumb square__img">
+                      <div class="item__salebadge">%</div>
+                    </a>
+                    <div class="simpleitem__bot d-flex">
+                      <a href="#" class="simpleitem__title"><span>Ложка серебряная 101.626</span></a>
+                      <div class="simpleitem__price">186 ₽</div>
+                    </div>
+                  </div>
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide">
+                  <div class="simpleitem">
+                    <a href="#" class="simpleitem__thumblink square">
+                      <img src="./assets/img/lozhka2.jpg" alt="" class="simpleitem__thumb square__img">
+                      <div class="item__badge">Новинка</div>
+                    </a>
+                    <div class="simpleitem__bot d-flex">
+                      <a href="#" class="simpleitem__title"><span>Ложка серебряная длинное наименование</span></a>
+                      <div class="simpleitem__price">2 500 ₽</div>
+                    </div>
+                  </div>
+                  <div class="simpleitem">
+                    <a href="#" class="simpleitem__thumblink square">
+                      <img src="./assets/img/lozhka2.jpg" alt="" class="simpleitem__thumb square__img">
+                    </a>
+                    <div class="simpleitem__bot d-flex">
+                      <a href="#" class="simpleitem__title"><span>Ложка серебряная 101.626</span></a>
+                      <div class="simpleitem__price">186 ₽</div>
+                    </div>
+                  </div>
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide">
+                  <div class="simpleitem">
+                    <a href="#" class="simpleitem__thumblink square">
+                      <img src="./assets/img/lozhka2.jpg" alt="" class="simpleitem__thumb square__img">
+                      <div class="item__badge">Новинка</div>
+                    </a>
+                    <div class="simpleitem__bot d-flex">
+                      <a href="#" class="simpleitem__title"><span>Ложка серебряная 101.626</span></a>
+                      <div class="simpleitem__price">186 ₽</div>
+                    </div>
+                  </div>
+                  <div class="simpleitem">
+                    <a href="#" class="simpleitem__thumblink square">
+                      <img src="./assets/img/lozhka2.jpg" alt="" class="simpleitem__thumb square__img">
+                    </a>
+                    <div class="simpleitem__bot d-flex">
+                      <a href="#" class="simpleitem__title"><span>Ложка серебряная 101.626</span></a>
+                      <div class="simpleitem__price">186 ₽</div>
+                    </div>
+                  </div>
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide">
+                  <div class="simpleitem simpleitem--big">
+                    <a href="#" class="simpleitem__thumblink square">
+                      <img src="./assets/img/lozhka.jpg" alt="" class="simpleitem__thumb square__img">
+                      <div class="item__salebadge">%</div>
+                    </a>
+                    <div class="simpleitem__bot d-flex">
+                      <a href="#" class="simpleitem__title"><span>Ложка серебряная 101.626</span></a>
+                      <div class="simpleitem__price">186 ₽</div>
+                    </div>
+                  </div>
+                </div><!-- //swiper-slide -->
+              </div>
+            </section>
+            <div class="fronttabs__action fronttabs__action--ctrl js-tabsslider-ctrl">
+              <button class="ctrl ctrl--prev"></button>
+              <a href="#" class="button fronttabs__more">
+                <span>Посмотреть больше</span>
+                <i class="button-arrow"></i>
+              </a>
+              <button class="ctrl ctrl--next"></button>
+            </div>
+          </div><!-- //end tab one -->
+
+          <div class="fronttabs__tab hiddentab" data-tab="two">
+            <section class="tabsslider js-tabsslider swiper">
+              <div class="swiper-wrapper align-items-stretch">
+                <div class="swiper-slide">
+                  <div class="simpleitem simpleitem--big">
+                    <a href="#" class="simpleitem__thumblink square">
+                      <img src="./assets/img/item2.jpg" alt="" class="simpleitem__thumb square__img">
+                      <div class="item__salebadge">%</div>
+                    </a>
+                    <div class="simpleitem__bot d-flex">
+                      <a href="#" class="simpleitem__title"><span>Ложка серебряная 101.626</span></a>
+                      <div class="simpleitem__price">186 ₽</div>
+                    </div>
+                  </div>
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide">
+                  <div class="simpleitem">
+                    <a href="#" class="simpleitem__thumblink square">
+                      <img src="./assets/img/item2.jpg" alt="" class="simpleitem__thumb square__img">
+                      <div class="item__badge">Новинка</div>
+                    </a>
+                    <div class="simpleitem__bot d-flex">
+                      <a href="#" class="simpleitem__title"><span>Ложка серебряная длинное наименование</span></a>
+                      <div class="simpleitem__price">2 500 ₽</div>
+                    </div>
+                  </div>
+                  <div class="simpleitem">
+                    <a href="#" class="simpleitem__thumblink square">
+                      <img src="./assets/img/item2.jpg" alt="" class="simpleitem__thumb square__img">
+                    </a>
+                    <div class="simpleitem__bot d-flex">
+                      <a href="#" class="simpleitem__title"><span>Ложка серебряная 101.626</span></a>
+                      <div class="simpleitem__price">186 ₽</div>
+                    </div>
+                  </div>
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide">
+                  <div class="simpleitem">
+                    <a href="#" class="simpleitem__thumblink square">
+                      <img src="./assets/img/item2.jpg" alt="" class="simpleitem__thumb square__img">
+                      <div class="item__badge">Новинка</div>
+                    </a>
+                    <div class="simpleitem__bot d-flex">
+                      <a href="#" class="simpleitem__title"><span>Ложка серебряная 101.626</span></a>
+                      <div class="simpleitem__price">186 ₽</div>
+                    </div>
+                  </div>
+                  <div class="simpleitem">
+                    <a href="#" class="simpleitem__thumblink square">
+                      <img src="./assets/img/item2.jpg" alt="" class="simpleitem__thumb square__img">
+                    </a>
+                    <div class="simpleitem__bot d-flex">
+                      <a href="#" class="simpleitem__title"><span>Ложка серебряная 101.626</span></a>
+                      <div class="simpleitem__price">186 ₽</div>
+                    </div>
+                  </div>
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide">
+                  <div class="simpleitem simpleitem--big">
+                    <a href="#" class="simpleitem__thumblink square">
+                      <img src="./assets/img/item2.jpg" alt="" class="simpleitem__thumb square__img">
+                      <div class="item__salebadge">%</div>
+                    </a>
+                    <div class="simpleitem__bot d-flex">
+                      <a href="#" class="simpleitem__title"><span>Ложка серебряная 101.626</span></a>
+                      <div class="simpleitem__price">186 ₽</div>
+                    </div>
+                  </div>
+                </div><!-- //swiper-slide -->
+              </div>
+            </section>
+            <div class="fronttabs__action fronttabs__action--ctrl js-tabsslider-ctrl">
+              <button class="ctrl ctrl--prev"></button>
+              <a href="#" class="button fronttabs__more">
+                <span>Посмотреть больше</span>
+                <i class="button-arrow"></i>
+              </a>
+              <button class="ctrl ctrl--next"></button>
+            </div>
+          </div><!-- //end tab two -->
+
+          <div class="fronttabs__tab hiddentab" data-tab="three">
+            <div class="p-4" style="text-align: center;">Третий таб аналогичный предыдущим по разметке</div>
+          </div><!-- //end tab one -->
+
+
+        </div>
+      </section>
+
+
+      <aside class="frontbanner container">
+        <div class="frontbanner__bg">
+          <img src="./assets/img/front/banner1.png" alt="" class="frontbanner__pic">
+          <div class="frontbanner__main">
+            <div class="frontbanner__title">
+              Покроем <b>ЗОЛОТОМ</b> <br>или&nbsp;<b>РОДИЕМ</b> <br>серебряные <br>изделия
+            </div>
+            <a href="#" class="button frontbanner__button">
+              <span>Подробнее об услуге</span>
+              <i class="button-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+
+      <section class="frontnews container">
+        <header class="frontnews__hdr d-flex">
+          <div class="frontnews__title">Последние новости</div>
+          <a href="#" class="frontnews__link">Все новости</a>
+        </header>
+        <div class="frontnews__grid">
+          <article class="newsblock">
+            <a href="#" class="newsblock__thumblink square">
+              <img src="./assets/img/news-1.jpg" class="square__img" alt="">
+            </a>
+            <div class="newsblock__date">14.06.2023</div>
+            <a href="#" class="newsblock__title maxline2">Название новости может быть в одну строку</a>
+          </article>
+          <article class="newsblock">
+            <a href="#" class="newsblock__thumblink square">
+              <img src="./assets/img/news-2.jpg" class="square__img" alt="">
+            </a>
+            <div class="newsblock__date">14.06.2023</div>
+            <a href="#" class="newsblock__title maxline2">Название новости может быть в одну строку</a>
+          </article>
+          <article class="newsblock">
+            <a href="#" class="newsblock__thumblink square">
+              <img src="./assets/img/news-3.jpg" class="square__img" alt="">
+            </a>
+            <div class="newsblock__date">14.06.2023</div>
+            <a href="#" class="newsblock__title maxline2">Название новости может быть в одну строку</a>
+          </article>
+        </div>
+      </section>
+
+    </div><!-- //pagemain -->
+
+
+    <footer class="footer">
+      <div class="footer__cont container d-flex">
+        <section class="footerbox">
+          <div class="footerbox__title">Каталог</div>
+          <div class="footerbox__menu">
+            <ul>
+              <li>
+                <a href="#">Кресты</a>
+              </li>
+              <li>
+                <a href="#">Браслеты</a>
+              </li>
+              <li>
+                <a href="#">Иконы</a>
+              </li>
+              <li>
+                <a href="#">Ложки</a>
+              </li>
+              <li>
+                <a href="#">Богослужебные изделия</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">Подвески</a>
+              </li>
+              <li>
+                <a href="#">Бусины</a>
+              </li>
+              <li>
+                <a href="#">Кольца</a>
+              </li>
+              <li>
+                <a href="#">Серьги</a>
+              </li>
+              <li>
+                <a href="#">Подсвечники</a>
+              </li>
+            </ul>
+          </div>
+        </section><!-- //footerbox -->
+        <section class="footerbox">
+          <div class="footerbox__title">Для покупателей</div>
+          <div class="footerbox__menu">
+            <ul>
+              <li>
+                <a href="#">О компании</a>
+              </li>
+              <li>
+                <a href="#">Гарантии</a>
+              </li>
+              <li>
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">Документы</a>
+              </li>
+              <li>
+                <a href="#">Производство</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </section><!-- //footerbox -->
+        <aside class="footerend">
+          <div class="footerbox__title">Контакты</div>
+          <a href="#" class="footerend__phone">8 800 511 60 50</a>
+          <a href="#" class="footerend__email">info@preobragenie.com</a>
+          <div class="footerend__addr">107023 г. Москва, ул. Большая Семёновская д.11, стр. 1, 2-й этаж</div>
+          <a href="#" class="footer__recall">Заказать звонок</a>
+        </aside>
+      </div>
+      <div class="footbot">
+        <div class="container d-flex">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="https://omedia.su" target="_blank">Разработано в Omedia</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
