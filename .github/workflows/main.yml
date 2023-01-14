@@ -1,4 +1,7 @@
-on: push
+on:
+  push:
+    branches:
+      - release
 name: 🚀 Загрузка вёрстки на JINO-хостинг при пуше
 jobs:
   web-deploy:
